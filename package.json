@@ -7,6 +7,7 @@
   "files": [
     "index.js",
     "babel.js",
+    "common.js",
     "react.js"
   ],
   "repository": "https://github.com/tokenfoundry/eslint-config.git",
