@@ -99,3 +99,11 @@ module.exports = {
   ],
 };
 ```
+
+## Publishing
+
+To publish and update of this package run:
+
+```sh
+yarn publish --access=public
+```
