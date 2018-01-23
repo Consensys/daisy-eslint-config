@@ -105,5 +105,9 @@ module.exports = {
 To publish and update of this package run:
 
 ```sh
+# git add ...
+# git commit ...
+
 yarn publish --access=public
+git push --follow-tags
 ```
