@@ -1,6 +1,6 @@
 module.exports = {
   "extends": [
-    "tokenfoundry/common",
+    "@tokenfoundry/eslint-config/common",
   ],
   parser: "babel-eslint",
   parserOptions: {

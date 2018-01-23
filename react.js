@@ -1,10 +1,17 @@
 module.exports = {
   "extends": [
-    "tokenfoundry/babel",
+    "@tokenfoundry/eslint-config/babel",
+    "plugin:react/recommended",
+    "prettier/react",
   ],
   parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: "module",
     ecmaFeatures: {
       jsx: true,
     },
   },
+  plugins: [
+    "react",
+  ],
 };

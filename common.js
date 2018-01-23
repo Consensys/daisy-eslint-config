@@ -7,7 +7,8 @@ module.exports = {
     "ecmaVersion": 2018,
   },
   "env": {
-    "shared-node-browser": true,
+    "node": true,
+    "browser": true,
     "es6": true,
     "jest": true,
     "mocha": true,

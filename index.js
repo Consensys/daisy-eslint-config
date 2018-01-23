@@ -1,5 +1,5 @@
 module.exports = {
   "extends": [
-    "tokenfoundry/common",
+    "@tokenfoundry/eslint-config/common",
   ],
 };

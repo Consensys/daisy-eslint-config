@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-tokenfoundry",
+  "name": "@tokenfoundry/eslint-config",
   "version": "0.0.0",
   "private": false,
   "description": "Shareable ESLint rules for our projects.",
@@ -9,7 +9,7 @@
     "babel.js",
     "react.js"
   ],
-  "repository": "https://github.com/tokenfoundry/eslint-config-tokenfoundry.git",
+  "repository": "https://github.com/tokenfoundry/eslint-config.git",
   "author": {
     "email": "patricio.juri@consensys.net",
     "name": "Patricio López Juri",
