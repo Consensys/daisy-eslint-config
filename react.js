@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": [
+  extends: [
     "@tokenfoundry/eslint-config/babel",
     "plugin:react/recommended",
     "prettier/react",
@@ -8,10 +8,9 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
     ecmaFeatures: {
+      experimentalObjectRestSpread: true,
       jsx: true,
     },
   },
-  plugins: [
-    "react",
-  ],
+  plugins: ["react"],
 };

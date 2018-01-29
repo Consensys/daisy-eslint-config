@@ -1,19 +1,25 @@
 module.exports = {
-  extends: ["@tokenfoundry/eslint-config/base"],
-  parser: "babel-eslint",
+  extends: ["eslint:recommended", "prettier"],
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: "module",
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
     },
   },
+  env: {
+    node: true,
+    browser: true,
+    es6: true,
+    jest: true,
+    mocha: true,
+  },
+  plugins: ["prettier"],
   rules: {
     "prettier/prettier": [
       "error",
       {
         printWidth: 80,
-        trailingComma: "all",
+        trailingComma: "es5",
       },
     ],
   },

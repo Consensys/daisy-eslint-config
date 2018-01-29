@@ -3,11 +3,14 @@
   "version": "0.1.1",
   "private": false,
   "description": "Shareable ESLint rules for our projects.",
+  "scripts": {
+    "lint": "eslint . --config=base.js"
+  },
   "main": "index.js",
   "files": [
     "index.js",
     "babel.js",
-    "common.js",
+    "base.js",
     "react.js"
   ],
   "repository": "https://github.com/tokenfoundry/eslint-config.git",
@@ -25,6 +28,9 @@
     "prettier": "^1.10.2"
   },
   "peerDependencies": {
+    "eslint": "^4.16.0"
+  },
+  "devDependencies": {
     "eslint": "^4.16.0"
   }
 }
