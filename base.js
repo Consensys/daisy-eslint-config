@@ -34,5 +34,7 @@ module.exports = {
     "promise/prefer-await-to-then": "warn",
     // Force `import { map, noop } from "lodash-es";`
     "lodash/import-scope": ["error", "member"],
+    // Do not enforce lodash
+    "lodash/prefer-lodash-method": "off",
   },
 };
