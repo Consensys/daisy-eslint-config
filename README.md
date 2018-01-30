@@ -21,12 +21,12 @@ lib
 
 In the `package.json` file add the following in the `"scripts"` section:
 
-```json
+```js
  {
    // ...
    "scripts": {
      // ...
-     "lint": "eslint src .eslintrc.js"
+     "lint": "eslint src .eslintrc.js  --ext .js --ext .jsx"
    },
  }
 ```
@@ -98,7 +98,7 @@ And add to the `package.json`:
   // ...
   "scripts": {
     // ...
-    "lint": "eslint src .eslintrc.js"
+    "lint": "eslint src .eslintrc.js  --ext .js --ext .jsx"
   },
   "husky": {
     "hooks": {
