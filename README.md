@@ -21,13 +21,13 @@ lib
 
 In the `package.json` file add the following in the `"scripts"` section:
 
-```diff
+```json
  {
-   ...
+   // ...
    "scripts": {
-     ...
-+    "lint": "eslint src .eslintrc.js",
-   }
+     // ...
+     "lint": "eslint src .eslintrc.js"
+   },
  }
 ```
 
@@ -81,6 +81,31 @@ To lint the files and **auto-format** run:
 
 ```sh
 yarn lint --fix
+```
+
+### Recommended usage
+
+Install [`typicode/husky`](https://github.com/typicode/husky) so you always have to run the linter before committing:
+
+```sh
+yarn add --dev husky@next
+```
+
+And add to the `package.json`:
+
+```json
+ {
+  // ...
+  "scripts": {
+    // ...
+    "lint": "eslint src .eslintrc.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+}
 ```
 
 ### Custom rules
