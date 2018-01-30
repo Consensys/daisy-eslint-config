@@ -1,9 +1,11 @@
 module.exports = {
   extends: [
-    "@tokenfoundry/eslint-config/babel",
+    "airbnb",
+    "@tokenfoundry/eslint-config/base",
     "plugin:react/recommended",
     "prettier/react",
   ],
+  parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: "module",
@@ -13,4 +15,13 @@ module.exports = {
     },
   },
   plugins: ["react"],
+  rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        printWidth: 80,
+        trailingComma: "all",
+      },
+    ],
+  },
 };

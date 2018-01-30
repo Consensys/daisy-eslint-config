@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ["eslint:recommended", "prettier"],
+  extends: [
+    "prettier",
+    "plugin:promise/recommended",
+    "plugin:lodash/recommended",
+  ],
   parserOptions: {
     ecmaVersion: 2018,
     ecmaFeatures: {
@@ -10,10 +14,8 @@ module.exports = {
     node: true,
     browser: true,
     es6: true,
-    jest: true,
-    mocha: true,
   },
-  plugins: ["prettier"],
+  plugins: ["prettier", "promise", "lodash"],
   rules: {
     "prettier/prettier": [
       "error",
@@ -22,5 +24,15 @@ module.exports = {
         trailingComma: "es5",
       },
     ],
+    // Because some external APIs do not use camelCase
+    "dot-notation": "off",
+    // Allow for-of
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    // Allow creating promises
+    "promise/avoid-new": "off",
+    // Prefer `await fetch()` over `fetch().then()`
+    "promise/prefer-await-to-then": "warn",
+    // Force `import { map, noop } from "lodash-es";`
+    "lodash/import-scope": ["error", "member"],
   },
 };

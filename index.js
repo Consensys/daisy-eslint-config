@@ -1,3 +1,7 @@
 module.exports = {
-  extends: ["@tokenfoundry/eslint-config/base"],
+  extends: [
+    "airbnb-base/legacy",
+    "airbnb-base/rules/es6",
+    "@tokenfoundry/eslint-config/base",
+  ],
 };
