@@ -36,5 +36,7 @@ module.exports = {
     "lodash/import-scope": ["error", "member"],
     // Do not enforce lodash
     "lodash/prefer-lodash-method": "off",
+    // Allow any use of paths
+    "lodash/path-style": "off",
   },
 };
