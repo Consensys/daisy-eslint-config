@@ -1,6 +1,6 @@
 {
   "name": "@tokenfoundry/eslint-config",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "private": false,
   "description": "Shareable ESLint rules for our projects.",
   "scripts": {
