@@ -6,19 +6,20 @@
   "scripts": {
     "lint": "eslint . --config=base.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
   "main": "index.js",
   "files": [
     "index.js",
     "babel.js",
     "base.js",
     "react.js",
+    "jest.js",
     "stylelint.js"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
-  },
   "repository": "https://github.com/tokenfoundry/eslint-config.git",
   "author": {
     "email": "patricio.juri@consensys.net",
@@ -27,27 +28,28 @@
   },
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^8.2.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.12.2",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-lodash": "^2.5.1",
-    "eslint-plugin-prettier": "^2.5.0",
+    "eslint-plugin-lodash": "^2.6.1",
+    "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-react": "^7.5.1",
-    "prettier": "^1.10.2",
-    "stylelint-config-standard": "^18.0.0",
+    "eslint-plugin-react": "^7.7.0",
+    "prettier": "^1.11.0",
+    "stylelint-config-standard": "^18.1.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.2.2"
+    "stylelint-processor-styled-components": "^1.3.0"
   },
   "peerDependencies": {
     "eslint": "^4.16.0",
     "stylelint": "^8.4.0"
   },
   "devDependencies": {
-    "eslint": "^4.16.0",
-    "husky": "^0.15.0-rc.3"
+    "eslint": "^4.18.1",
+    "husky": "^0.15.0-rc.8"
   }
 }
