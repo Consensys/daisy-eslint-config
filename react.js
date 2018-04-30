@@ -23,5 +23,9 @@ module.exports = {
         trailingComma: "all",
       },
     ],
+    // Do not use .jsx
+    "react/jsx-filename-extension": "off",
+    // Do not force `export default`
+    "import/prefer-default-export": "off",
   },
 };

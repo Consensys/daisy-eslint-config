@@ -26,6 +26,8 @@ module.exports = {
     ],
     // Because some external APIs do not use camelCase
     "dot-notation": "off",
+    // It's ok to not use destructuring sometimes
+    "prefer-destructuring": "off",
     // Allow for-of
     "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
     // Allow creating promises

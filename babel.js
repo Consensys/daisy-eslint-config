@@ -16,5 +16,7 @@ module.exports = {
         trailingComma: "all",
       },
     ],
+    // Do not force `export default`
+    "import/prefer-default-export": "off",
   },
 };
