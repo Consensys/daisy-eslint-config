@@ -10,7 +10,6 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       jsx: true,
     },
   },
@@ -23,6 +22,8 @@ module.exports = {
         trailingComma: "all",
       },
     ],
+    // It's ok not using destructing
+    "react/destructuring-assignment": "off",
     // Do not use .jsx
     "react/jsx-filename-extension": "off",
     // Do not force `export default`

@@ -21,6 +21,29 @@ module.exports = {
         trailingComma: "es5",
       },
     ],
+    // Prevent people from re-defining names like "Date", "Error", etc.
+    "no-shadow": [
+      "error",
+      {
+        builtinGlobals: true,
+        hoist: "all",
+        // Some of those are here: https://www.w3schools.com/js/js_reserved.asp
+        // But we will allow for productivity.
+        allow: [
+          "Text",
+          "id",
+          "name",
+          "assert",
+          "server",
+          "context",
+          "status",
+          "form",
+          "test",
+        ],
+      },
+    ],
+    // It's ok
+    "no-else-return": "off",
     // Because some external APIs do not use camelCase
     "dot-notation": "off",
     // It's ok to not use destructuring sometimes
