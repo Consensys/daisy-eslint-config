@@ -153,11 +153,11 @@ Modify the `.eslintrc.js` and add a `"rules"` field:
 
 module.exports = {
   extends: ["@tokenfoundry/eslint-config/react"],
-  rules: [
+  rules: {
     "react/prop-types": 0, // disabled
     "react/display-name": 1, // warning
     "react/jsx-boolean-value": 2, // throw error
-  ],
+  },
 };
 ```
 
