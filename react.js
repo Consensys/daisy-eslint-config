@@ -26,6 +26,8 @@ module.exports = {
     "react/destructuring-assignment": "off",
     // Do not use .jsx
     "react/jsx-filename-extension": "off",
+    // Allow escaping text like: <span>{`You don't have...`}</span>
+    "react/jsx-curly-brace-presence": "off",
     // Do not force `export default`
     "import/prefer-default-export": "off",
   },
