@@ -69,38 +69,6 @@ module.exports = {
 };
 ```
 
-#### Configure stylelint for styled-components
-
-If you are using [`styled-components`](https://www.styled-components.com) you should use [`stylelint`](https://github.com/stylelint/stylelint) to lint the inlined CSS code.
-
-Install it with:
-
-```sh
-yarn add --dev stylelint
-```
-
-Then create a `.stylelintrc.js` file with this content:
-
-```js
-// .stylelintrc.js
-
-module.exports = {
-  extends: ["@tokenfoundry/eslint-config/stylelint"],
-};
-```
-
-In the `package.json` file add the following in the `"scripts"` section:
-
-```js
- {
-   // ...
-   "scripts": {
-     // ...
-     "lint:css": "stylelint '{src,__tests__}/**/*.{js,jsx}'",
-   },
- }
-```
-
 ## Usage
 
 To lint the files run:
@@ -141,8 +109,6 @@ And add to the `package.json`:
   },
 }
 ```
-
-> Use `yarn lint && yarn lint:css` instead if did setup `stylelint`.
 
 ### Custom rules
 
