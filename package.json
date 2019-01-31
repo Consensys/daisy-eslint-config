@@ -4,11 +4,11 @@
   "private": false,
   "description": "Shareable ESLint rules for our projects.",
   "scripts": {
-    "lint": "eslint . --config=base.js"
+    "lint": "eslint --config=base.js"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn lint ."
     }
   },
   "main": "index.js",
@@ -28,24 +28,24 @@
   },
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint-config-airbnb": "^17.0.0",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jest": "^21.18.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-lodash": "^2.7.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-react": "^7.10.0",
-    "prettier": "^1.14.0"
+    "babel-eslint": "^10.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.2.1",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-lodash": "^5.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.16.3"
   },
   "peerDependencies": {
     "eslint": "^5.2.0"
   },
   "devDependencies": {
-    "eslint": "^5.2.0",
-    "husky": "^0.15.0-rc.8"
+    "eslint": "^5.12.1",
+    "husky": "^1.3.1"
   }
 }
