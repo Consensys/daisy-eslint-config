@@ -17,6 +17,7 @@
     "babel.js",
     "base.js",
     "react.js",
+    "typescript.js",
     "jest.js"
   ],
   "repository": "https://github.com/tokenfoundry/eslint-config.git",
