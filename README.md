@@ -57,6 +57,28 @@ module.exports = {
 };
 ```
 
+### Configure for Typescript
+
+Create a `.eslintrc.js` file in the root of your project and add the following:
+
+```js
+// .eslintrc.js
+
+module.exports = {
+  extends: ["@tokenfoundry/eslint-config/typescript"],
+};
+```
+
+Add to the `package.json` file the following arguments to the `lint` script:
+
+```json
+{
+  "scripts": {
+    "lint": "eslint --ext .js --ext .ts"
+  },
+}
+```
+
 ### Configure for React.js and React-Native
 
 Create a `.eslintrc.js` file in the root of your project and add the following:
@@ -83,6 +105,12 @@ To lint the files and **auto-format** run:
 yarn lint --fix
 ```
 
+To run in a specific file or directory (eg: `src`):
+
+```sh
+yarn lint --fix src
+```
+
 > **Do not** run `yarn lint:css --fix` it will break your component file.
 
 ### Recommended usage
@@ -100,7 +128,7 @@ And add to the `package.json`:
   // ...
   "scripts": {
     // ...
-    "lint": "eslint src __tests__ .eslintrc.js  --ext .js --ext .jsx"
+    "lint": "eslint src __tests__ .eslintrc.js  --ext .js --ext .ts"
   },
   "husky": {
     "hooks": {
@@ -125,6 +153,35 @@ module.exports = {
     "react/jsx-boolean-value": 2, // throw error
   },
 };
+```
+
+## Setup Visual Studio Code
+
+Create file `.vscode/settings.json`
+
+```sh
+mkdir -p .vscode
+touch .vscode/settings.json
+```
+
+Add the following:
+
+```json
+{
+    "eslint.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ]
+}
 ```
 
 ## Publishing

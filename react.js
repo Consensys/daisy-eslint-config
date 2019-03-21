@@ -31,4 +31,9 @@ module.exports = {
     // Do not force `export default`
     "import/prefer-default-export": "off",
   },
+  settings: {
+    react: {
+      version: "detect", // Tells eslint-plugin-react to automatically detect the version of React to use
+    },
+  },
 };

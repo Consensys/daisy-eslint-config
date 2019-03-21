@@ -21,6 +21,9 @@ module.exports = {
         trailingComma: "es5",
       },
     ],
+    "no-continue": "off",
+    "no-empty": "off",
+    "no-await-in-loop": "off",
     // Prevent people from re-defining names like "Date", "Error", etc.
     "no-shadow": [
       "error",
@@ -32,6 +35,10 @@ module.exports = {
         allow: [
           "Text",
           "id",
+          "type",
+          "crypto",
+          "event",
+          "parent",
           "name",
           "assert",
           "server",
@@ -58,5 +65,7 @@ module.exports = {
     "lodash/prefer-lodash-method": "off",
     // Allow any use of paths
     "lodash/path-style": "off",
+    // Not required
+    "lodash/prefer-constant": "off",
   },
 };
