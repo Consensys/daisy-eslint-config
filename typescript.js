@@ -20,5 +20,11 @@ module.exports = {
     ],
     // Do not force `export default`
     "import/prefer-default-export": "off",
+
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-member-accessibility": "warn",
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-var-requires": "warn",
   },
 };

@@ -38,6 +38,7 @@ module.exports = {
           "type",
           "crypto",
           "event",
+          "Event",
           "parent",
           "name",
           "assert",
