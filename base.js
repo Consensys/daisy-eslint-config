@@ -42,6 +42,7 @@ module.exports = {
           "parent",
           "name",
           "assert",
+          "expect",
           "server",
           "context",
           "status",
