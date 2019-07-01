@@ -1,4 +1,4 @@
-# @tokenfoundry/eslint-config
+# @daisypayments/eslint-config
 
 Please use this configuration to maintain a common and homogeneous code base.
 
@@ -7,7 +7,7 @@ Please use this configuration to maintain a common and homogeneous code base.
 Install this package as any other package with:
 
 ```sh
-yarn add --dev eslint @tokenfoundry/eslint-config
+yarn add --dev eslint @daisypayments/eslint-config
 ```
 
 Create a `.eslintignore` and add any files that are bundled, builded and/or _transpiled_:
@@ -41,7 +41,7 @@ Create a `.eslintrc.js` file in the root of your project and add the following:
 // .eslintrc.js
 
 module.exports = {
-  extends: ["@tokenfoundry/eslint-config"],
+  extends: ["@daisypayments/eslint-config"],
 };
 ```
 
@@ -53,7 +53,7 @@ Create a `.eslintrc.js` file in the root of your project and add the following:
 // .eslintrc.js
 
 module.exports = {
-  extends: ["@tokenfoundry/eslint-config/babel"],
+  extends: ["@daisypayments/eslint-config/babel"],
 };
 ```
 
@@ -65,7 +65,7 @@ Create a `.eslintrc.js` file in the root of your project and add the following:
 // .eslintrc.js
 
 module.exports = {
-  extends: ["@tokenfoundry/eslint-config/typescript"],
+  extends: ["@daisypayments/eslint-config/typescript"],
 };
 ```
 
@@ -87,7 +87,7 @@ Create a `.eslintrc.js` file in the root of your project and add the following:
 // .eslintrc.js
 
 module.exports = {
-  extends: ["@tokenfoundry/eslint-config/react"],
+  extends: ["@daisypayments/eslint-config/react"],
 };
 ```
 
@@ -124,16 +124,16 @@ yarn add --dev husky@next
 And add to the `package.json`:
 
 ```json
- {
+{
   // ...
   "scripts": {
     // ...
-    "lint": "eslint src __tests__ .eslintrc.js  --ext .js --ext .ts"
+    "lint": "eslint src __tests__ .eslintrc.js  --ext .js --ext .ts",
   },
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint"
-    }
+    },
   },
 }
 ```
@@ -146,7 +146,7 @@ Modify the `.eslintrc.js` and add a `"rules"` field:
 // .eslintrc.js
 
 module.exports = {
-  extends: ["@tokenfoundry/eslint-config/react"],
+  extends: ["@daisypayments/eslint-config/react"],
   rules: {
     "react/prop-types": 0, // disabled
     "react/display-name": 1, // warning
@@ -168,19 +168,19 @@ Add the following:
 
 ```json
 {
-    "eslint.enable": true,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "typescript",
-            "autoFix": true
-        },
-        {
-            "language": "typescriptreact",
-            "autoFix": true
-        }
-    ]
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true,
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true,
+    },
+  ],
 }
 ```
 

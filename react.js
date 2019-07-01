@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     "airbnb",
-    "@tokenfoundry/eslint-config/base",
+    "@daisypayments/eslint-config/base",
     "plugin:react/recommended",
     "prettier/react",
   ],

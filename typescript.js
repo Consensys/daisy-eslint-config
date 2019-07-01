@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    "@tokenfoundry/eslint-config/base",
+    "@daisypayments/eslint-config/base",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
   ],
