@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ["airbnb-base", "@tokenfoundry/eslint-config/base"],
+  extends: ["airbnb-base", "@daisypayments/eslint-config/base"],
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 2018,
