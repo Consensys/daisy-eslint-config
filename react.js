@@ -28,6 +28,10 @@ module.exports = {
     "react/jsx-filename-extension": "off",
     // Allow escaping text like: <span>{`You don't have...`}</span>
     "react/jsx-curly-brace-presence": "off",
+    // Checks rules of Hooks
+    "react-hooks/rules-of-hooks": "error",
+    // Checks effect dependencies
+    "react-hooks/exhaustive-deps": "warn",
     // Do not force `export default`
     "import/prefer-default-export": "off",
   },
