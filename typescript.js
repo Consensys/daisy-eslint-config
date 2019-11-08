@@ -26,5 +26,6 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "warn",
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/ban-ts-ignore": "warn",
   },
 };
