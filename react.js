@@ -22,6 +22,8 @@ module.exports = {
         trailingComma: "all",
       },
     ],
+    // We use it
+    "react/jsx-props-no-spreading": "off",
     // It's ok not using destructing
     "react/destructuring-assignment": "off",
     // Do not use .jsx
