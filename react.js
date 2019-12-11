@@ -13,7 +13,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ["react"],
+  plugins: ["react", "react-hooks"],
   rules: {
     "prettier/prettier": [
       "error",
@@ -34,6 +34,9 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     // Do not force `export default`
     "import/prefer-default-export": "off",
+    // React hooks
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
   },
   settings: {
     react: {
