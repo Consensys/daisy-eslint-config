@@ -4,7 +4,7 @@
   "private": false,
   "description": "Shareable ESLint rules for our projects.",
   "scripts": {
-    "lint": "eslint --config=base.js --ext .js --ext .ts"
+    "lint": "eslint --config=index.js --ext .js --ext .ts --exclude examples"
   },
   "husky": {
     "hooks": {
@@ -28,27 +28,27 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.6.1",
-    "@typescript-eslint/parser": "^2.6.1",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
     "babel-eslint": "^10.0.3",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^23.0.3",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jest": "^23.6.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-lodash": "^6.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.2.0",
-    "prettier": "^1.18.2"
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "prettier": "^1.19.1"
   },
   "peerDependencies": {
     "eslint": "*"
   },
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "husky": "^3.0.9"
+    "eslint": "^6.8.0",
+    "husky": "^4.0.9"
   }
 }
