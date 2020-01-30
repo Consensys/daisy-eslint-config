@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    "prettier",
-    "plugin:promise/recommended",
-    "plugin:lodash/recommended",
-  ],
+  extends: ["prettier", "plugin:promise/recommended", "plugin:lodash/recommended"],
   parserOptions: {
     ecmaVersion: 2018,
   },

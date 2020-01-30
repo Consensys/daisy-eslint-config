@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "@daisypayments/eslint-config": "file:../../"
-  }
-}
