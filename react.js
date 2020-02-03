@@ -26,6 +26,48 @@ module.exports = {
     "react/static-property-placement": "off",
     // It's ok not using destructing
     "react/destructuring-assignment": "off",
+    // Adapt to our codebase
+    "react/sort-comp": [
+      "error",
+      {
+        order: [
+          "static-lifecycle",
+          "static-variables",
+          "static-methods",
+          "lifecycle",
+          "everything-else",
+          "/^on.+$/",
+          "rendering",
+        ],
+        groups: {
+          "static-lifecycle": ["displayName", "contextTypes", "propTypes", "defaultProps"],
+          lifecycle: [
+            "state",
+            "instance-variables",
+            "getters",
+            "setters",
+            "constructor",
+            // 'getDefaultProps',
+            // 'getInitialState',
+            // 'getChildContext',
+            "getDerivedStateFromProps",
+            "componentWillMount",
+            "UNSAFE_componentWillMount",
+            "componentDidMount",
+            "componentWillReceiveProps",
+            "UNSAFE_componentWillReceiveProps",
+            "shouldComponentUpdate",
+            "componentWillUpdate",
+            "UNSAFE_componentWillUpdate",
+            "getSnapshotBeforeUpdate",
+            "componentDidUpdate",
+            "componentDidCatch",
+            "componentWillUnmount",
+          ],
+          rendering: ["/^render.+$/", "render"],
+        },
+      },
+    ],
     // We use it
     "react/jsx-props-no-spreading": "off",
     // Do not use .jsx
